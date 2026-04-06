@@ -39,7 +39,7 @@ export default function Navbar() {
           WebkitBackdropFilter: scrolled ? `blur(20px)` : "blur(0px)",
         }}
       >
-        <nav className="mx-auto flex h-16 max-w-[1200px] items-center justify-between px-6">
+        <nav className="mx-auto flex h-16 max-w-[1216px] items-center justify-between px-8">
           {/* Logo */}
           <Link href="/" className="group flex items-center gap-2.5">
             <div className="flex h-9 w-9 items-center justify-center rounded-xl bg-gradient-to-br from-primary to-primary-hover shadow-lg shadow-primary/20 transition-shadow group-hover:shadow-primary/40">
@@ -56,14 +56,14 @@ export default function Navbar() {
           </Link>
 
           {/* Desktop Nav */}
-          <div className="hidden items-center gap-0.5 rounded-full border border-border/40 bg-surface/30 px-1.5 py-1 backdrop-blur-sm md:flex">
+          <div className="hidden items-center gap-1 rounded-full border border-border/40 bg-surface/30 px-2 py-1 backdrop-blur-sm md:flex">
             {navLinks.map((link) => {
               const isActive = pathname === link.href;
               return (
                 <Link
                   key={link.href}
                   href={link.href}
-                  className={`relative rounded-full px-4 py-1.5 text-sm font-medium transition-colors ${
+                  className={`relative rounded-full px-4 py-2 text-sm font-medium transition-colors ${
                     isActive
                       ? "text-text-primary"
                       : "text-text-muted hover:text-text-secondary"

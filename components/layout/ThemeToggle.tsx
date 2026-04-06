@@ -23,6 +23,7 @@ export default function ThemeToggle() {
   return (
     <button
       onClick={toggleTheme}
+      suppressHydrationWarning
       className="group relative flex h-9 w-9 items-center justify-center rounded-xl border border-border transition-colors hover:border-border-hover hover:bg-surface"
       aria-label={`Current: ${labels[theme]}. Click to switch.`}
       title={`Switch theme (${labels[theme]})`}

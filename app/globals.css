@@ -269,6 +269,17 @@ html.theme-transitioning *::after {
   100% { transform: translateX(-50%); }
 }
 
+/* Gradient X animation for text */
+@keyframes gradient-x {
+  0%, 100% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+}
+
+.animate-gradient-x {
+  animation: gradient-x 5s ease infinite;
+  background-size: 200% auto;
+}
+
 /* ═══════ PREMIUM UI UTILITIES ═══════ */
 
 /* Noise grain texture overlay */

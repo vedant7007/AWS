@@ -383,7 +383,17 @@ export const teamData: TeamData = {
       tagline: "Building the infrastructure and leading all technical initiatives",
       socials: { linkedin: "#", github: "#", twitter: "#" },
       color: "#4DA6FF",
-      teamMembers: [],
+      teamMembers: [
+        { name: "Ananya Sharma", subRole: "Cloud Dev", social: "#" },
+        { name: "Karthik Reddy", subRole: "Solutions Architect", social: "#" },
+        { name: "Sneha Patel", subRole: "ML Engineer", social: "#" },
+        { name: "Arjun Verma", subRole: "DevOps", social: "#" },
+        { name: "Priya Rao", subRole: "Backend", social: "#" },
+        { name: "Rahul Singh", subRole: "Cloud Security", social: "#" },
+        { name: "Ishita Jain", subRole: "Data Engineer", social: "#" },
+        { name: "Siddharth M", subRole: "SysAdmin", social: "#" },
+        { name: "Tanu Shree", subRole: "Cloud Ops", social: "#" }
+      ],
     },
     {
       id: "events",
@@ -392,7 +402,17 @@ export const teamData: TeamData = {
       tagline: "Orchestrating workshops, hackathons, and community events",
       socials: { linkedin: "#", github: "#" },
       color: "#2DD4BF",
-      teamMembers: [],
+      teamMembers: [
+        { name: "Vikram Shah", subRole: "Event Lead", social: "#" },
+        { name: "Megha Gupta", subRole: "Logistics", social: "#" },
+        { name: "Aman Gupta", subRole: "Outreach", social: "#" },
+        { name: "Riya Sen", subRole: "Hospitality", social: "#" },
+        { name: "Varun K", subRole: "Registrations", social: "#" },
+        { name: "Kiran P", subRole: "Venue Mgmt", social: "#" },
+        { name: "Saira Banu", subRole: "PR", social: "#" },
+        { name: "Nitin R", subRole: "Sponsorship", social: "#" },
+        { name: "Aditi S", subRole: "Volunteer Head", social: "#" }
+      ],
     },
     {
       id: "production",
@@ -401,7 +421,17 @@ export const teamData: TeamData = {
       tagline: "Managing content production, video, and event documentation",
       socials: { linkedin: "#", github: "#" },
       color: "#A78BFA",
-      teamMembers: [],
+      teamMembers: [
+        { name: "Samit R", subRole: "Video Editor", social: "#" },
+        { name: "Divya K", subRole: "Content Writer", social: "#" },
+        { name: "Harsh V", subRole: "Cinematographer", social: "#" },
+        { name: "Tanya M", subRole: "Social Media", social: "#" },
+        { name: "Rohan J", subRole: "Photographer", social: "#" },
+        { name: "Navya G", subRole: "Script Writer", social: "#" },
+        { name: "Abhay D", subRole: "Audio Eng", social: "#" },
+        { name: "Sanya L", subRole: "VFX", social: "#" },
+        { name: "Manish T", subRole: "DOP", social: "#" }
+      ],
     },
     {
       id: "design",
@@ -410,7 +440,17 @@ export const teamData: TeamData = {
       tagline: "Crafting the visual identity and creative direction of the club",
       socials: { linkedin: "#", github: "#" },
       color: "#F472B6",
-      teamMembers: [],
+      teamMembers: [
+        { name: "Akash B", subRole: "UI Designer", social: "#" },
+        { name: "Tanu S", subRole: "Graphics", social: "#" },
+        { name: "Zoya R", subRole: "Illustrator", social: "#" },
+        { name: "Kunal M", subRole: "UX Research", social: "#" },
+        { name: "Shivani P", subRole: "Brand Designer", social: "#" },
+        { name: "Arman K", subRole: "3D Artist", social: "#" },
+        { name: "Mona L", subRole: "Motion Graphics", social: "#" },
+        { name: "Deepak S", subRole: "Web Design", social: "#" },
+        { name: "Esha V", subRole: "Typography", social: "#" }
+      ],
     },
     {
       id: "marketing",
@@ -419,7 +459,17 @@ export const teamData: TeamData = {
       tagline: "Driving outreach, social media presence, and club visibility",
       socials: { linkedin: "#", github: "#" },
       color: "#FBBF24",
-      teamMembers: [],
+      teamMembers: [
+        { name: "Tarun K", subRole: "Content Lead", social: "#" },
+        { name: "Ishita J", subRole: "SM Manager", social: "#" },
+        { name: "Yash G", subRole: "Campaign Lead", social: "#" },
+        { name: "Barkha S", subRole: "Blogger", social: "#" },
+        { name: "Pranav M", subRole: "Analytics", social: "#" },
+        { name: "Shreya T", subRole: "SEO Specialist", social: "#" },
+        { name: "Karan D", subRole: "Ads Manager", social: "#" },
+        { name: "Naina L", subRole: "Email Mkt", social: "#" },
+        { name: "Rajat B", subRole: "Influencer Lead", social: "#" }
+      ],
     },
   ],
   recruitment: {
