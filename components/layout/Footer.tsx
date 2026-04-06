@@ -33,10 +33,10 @@ export default function Footer() {
       {/* Top gradient accent line */}
       <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-primary/40 to-transparent" />
 
-      <div className="mx-auto max-w-[1200px] px-6 pt-16 pb-8">
+      <div className="mx-auto max-w-[1216px] px-8 pt-16 pb-8">
         {/* Newsletter Section */}
         <Reveal variant="fadeUp">
-          <div className="mb-14 flex flex-col items-center gap-6 rounded-2xl border border-border bg-elevated p-8 text-center md:flex-row md:text-left">
+          <div className="mb-14 flex flex-col items-center gap-8 rounded-2xl border border-border bg-elevated p-8 text-center md:flex-row md:text-left">
             <div className="flex-1">
               <h3 className="mb-1 font-heading text-lg font-bold text-text-primary">
                 Stay in the loop
@@ -50,12 +50,14 @@ export default function Footer() {
                 type="email"
                 placeholder="your@email.com"
                 value={email}
+                suppressHydrationWarning
                 onChange={(e) => setEmail(e.target.value)}
-                className="input-focus w-full rounded-xl border border-border bg-background px-4 py-2.5 text-sm text-text-primary placeholder:text-text-muted md:w-64"
+                className="input-focus w-full rounded-xl border border-border bg-background px-4 py-3 text-sm text-text-primary placeholder:text-text-muted md:w-64"
               />
               <button
                 type="submit"
-                className="shimmer-btn flex shrink-0 items-center gap-1 rounded-xl bg-gradient-to-r from-primary to-primary-hover px-5 py-2.5 text-sm font-bold text-text-on-primary"
+                suppressHydrationWarning
+                className="shimmer-btn flex shrink-0 items-center gap-1 rounded-xl bg-gradient-to-r from-primary to-primary-hover px-5 py-3 text-sm font-bold text-text-on-primary"
               >
                 {subscribed ? "Subscribed!" : "Subscribe"}
                 {!subscribed && <ArrowRight className="h-3.5 w-3.5" />}

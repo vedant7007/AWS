@@ -10,6 +10,8 @@ interface MagneticButtonProps {
   href?: string;
   as?: "button" | "a";
   strength?: number;
+  target?: string;
+  rel?: string;
 }
 
 export default function MagneticButton({
@@ -19,6 +21,8 @@ export default function MagneticButton({
   href,
   as = "button",
   strength = 0.3,
+  target,
+  rel,
 }: MagneticButtonProps) {
   const ref = useRef<HTMLDivElement>(null);
 
@@ -55,6 +59,10 @@ export default function MagneticButton({
         className={className}
         onClick={onClick}
         href={href}
+        // @ts-ignore
+        target={target}
+        // @ts-ignore
+        rel={rel}
         whileHover={{ scale: 1.05 }}
         whileTap={{ scale: 0.95 }}
       >
