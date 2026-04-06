@@ -1,0 +1,36 @@
+.shuffle-text {
+  position: relative;
+}
+
+.shuffle-char {
+  display: inline-block;
+}
+
+.shuffle-word {
+  display: inline-block;
+  white-space: nowrap;
+}
+
+.shuffle-line {
+  display: block;
+}
+
+/* Hero title - pixelated white text */
+.shuffle-hero-title {
+  color: rgba(255, 255, 255, 0.15);
+  text-shadow:
+    0 0 40px rgba(255, 255, 255, 0.03),
+    0 0 80px rgba(255, 255, 255, 0.02);
+  image-rendering: pixelated;
+  -webkit-font-smoothing: none;
+  -moz-osx-font-smoothing: unset;
+  text-rendering: optimizeSpeed;
+}
+
+/* Light mode - slightly darker for visibility */
+:root:not(.dark) .shuffle-hero-title {
+  color: rgba(0, 0, 0, 0.08);
+  text-shadow:
+    0 0 40px rgba(0, 0, 0, 0.02),
+    0 0 80px rgba(0, 0, 0, 0.01);
+}
