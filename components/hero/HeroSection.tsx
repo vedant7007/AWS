@@ -82,7 +82,7 @@ export default function HeroSection() {
       </motion.div>
 
       {/* Content */}
-      <div className="relative z-10 mx-auto max-w-[1200px] px-6 text-center">
+      <div className="relative z-10 mx-auto max-w-[1200px] px-6 text-center mt-24">
         {/* Badge with live pulse */}
         <motion.div
           className="mb-10 inline-flex items-center gap-2.5 rounded-full border border-primary/20 bg-primary-muted/50 px-5 py-2 text-sm font-medium backdrop-blur-md"

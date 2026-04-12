@@ -56,7 +56,7 @@ export default function Navbar() {
           </Link>
 
           {/* Desktop Nav */}
-          <div className="hidden items-center gap-1 rounded-full border border-border/40 bg-surface/30 px-2 py-1 backdrop-blur-sm md:flex">
+          <div className="hidden items-center gap-1 rounded-full border border-border/40 bg-surface/30 px-2 py-1 backdrop-blur-sm lg:flex">
             {navLinks.map((link) => {
               const isActive = pathname === link.href;
               return (
@@ -88,14 +88,14 @@ export default function Navbar() {
             <MagneticButton
               as="a"
               href="#join"
-              className="shimmer-btn hidden rounded-xl bg-gradient-to-r from-primary to-primary-hover px-5 py-2 text-sm font-bold text-text-on-primary shadow-md shadow-primary/20 md:block"
+              className="shimmer-btn hidden rounded-xl bg-gradient-to-r from-primary to-primary-hover px-5 py-2 text-sm font-bold text-text-on-primary shadow-md shadow-primary/20 lg:block"
             >
               Join Us
             </MagneticButton>
 
             {/* Mobile hamburger */}
             <button
-              className="relative z-50 flex h-10 w-10 items-center justify-center rounded-xl border border-border/60 bg-surface/50 backdrop-blur-sm md:hidden"
+              className="relative z-50 flex h-10 w-10 items-center justify-center rounded-xl border border-border/60 bg-surface/50 backdrop-blur-sm lg:hidden"
               onClick={() => setMobileOpen(!mobileOpen)}
               aria-label={mobileOpen ? "Close menu" : "Open menu"}
             >

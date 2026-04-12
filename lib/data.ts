@@ -8,9 +8,11 @@ export const navLinks = [
   { label: "Events", href: "/events" },
   { label: "Team", href: "/team" },
   { label: "Gallery", href: "/gallery" },
+  { label: "Courses", href: "/#courses" },
   { label: "Contact", href: "/contact" },
   { label: "Feedback", href: "/feedback" },
 ] as const;
+
 
 // Hero Stats
 export const heroStats = [
@@ -676,7 +678,6 @@ export const feedbackEmojis = [
   { emoji: "🔥", label: "Incredible", value: 5 },
 ];
 
-// Feedback categories
 export const feedbackCategories = [
   "Workshops",
   "Hackathons",
@@ -685,3 +686,50 @@ export const feedbackCategories = [
   "Resources",
   "Team",
 ];
+
+// AWS Courses from Official Site
+export const awsCourses = [
+  {
+    title: "Cloud Practitioner",
+    url: "https://skillbuilder.aws/getstarted?p=train&c=tc&z=4",
+    description: "Beginners start here. Learn cloud fundamentals and best practices.",
+    icon: "☁️",
+    color: "#FF9900"
+  },
+  {
+    title: "Solutions Architect",
+    url: "https://skillbuilder.aws/category/role/solutions-architect",
+    description: "Learn to design highly available systems.",
+    icon: "🏗️",
+    color: "#4DA6FF"
+  },
+  {
+    title: "Developer",
+    url: "https://skillbuilder.aws/category/role/developer",
+    description: "Learn to develop applications for the cloud.",
+    icon: "💻",
+    color: "#2DD4BF"
+  },
+  {
+    title: "Machine Learning & AI",
+    url: "https://skillbuilder.aws/category/role/machine-learning-engineer",
+    description: "Learn how to apply machine learning, artificial intelligence, and deep learning to innovate faster.",
+    icon: "🤖",
+    color: "#A78BFA"
+  },
+  {
+    title: "Security",
+    url: "https://aws.amazon.com/training/learn-about/security/",
+    description: "Learn the processes and best practices for AWS security.",
+    icon: "🔒",
+    color: "#F472B6"
+  },
+  {
+    title: "Data Analytics",
+    url: "https://skillbuilder.aws/category/role/data-engineer",
+    description: "Learn to design, build, secure, and maintain analytics solutions.",
+    icon: "📊",
+    color: "#10B981"
+  }
+];
+
