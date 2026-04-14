@@ -62,6 +62,7 @@ export default function RootLayout({
       </head>
       <body
         className={`${spaceGrotesk.variable} ${inter.variable} ${jetbrainsMono.variable} antialiased`}
+        suppressHydrationWarning
       >
         <ThemeProvider>
           <SmoothScroll>
