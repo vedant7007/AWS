@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <text x="10" y="50" font-size="36" fill="white" font-family="monospace" opacity="0.9">&lt;&gt;</text>
+  <text x="100" y="50" font-size="24" fill="white" font-family="monospace" opacity="0.7">{}</text>
+  <text x="50" y="100" font-size="30" fill="white" font-family="monospace" opacity="0.8">&lt;/&gt;</text>
+  <text x="140" y="100" font-size="20" fill="white" font-family="monospace" opacity="0.6">&lt;&gt;</text>
+  <text x="10" y="150" font-size="22" fill="white" font-family="monospace" opacity="0.7">{}</text>
+  <text x="80" y="160" font-size="32" fill="white" font-family="monospace" opacity="0.85">&lt;&gt;</text>
+  <text x="155" y="155" font-size="18" fill="white" font-family="monospace" opacity="0.5">//</text>
+  <text x="30" y="190" font-size="16" fill="white" font-family="monospace" opacity="0.5">&lt;/&gt;</text>
+  <text x="130" y="190" font-size="26" fill="white" font-family="monospace" opacity="0.7">&lt;&gt;</text>
+</svg>

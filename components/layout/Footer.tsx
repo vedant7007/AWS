@@ -6,7 +6,9 @@ import { Cloud, Linkedin, Twitter, Instagram, Github, Youtube, MessageCircle, Ar
 import { footerLinks, socialLinks } from "@/lib/data";
 import Reveal from "@/components/shared/Reveal";
 
-const iconMap: Record<string, React.ElementType> = {
+type IconComponent = React.FC<{ className?: string }>;
+
+const iconMap: Record<string, IconComponent> = {
   Linkedin,
   Twitter,
   Instagram,
@@ -86,7 +88,7 @@ export default function Footer() {
               </p>
               <div className="flex gap-2">
                 {socialLinks.map((social) => {
-                  const Icon = iconMap[social.icon];
+                  const IconComp = iconMap[social.icon];
                   return (
                     <a
                       key={social.name}
@@ -94,7 +96,7 @@ export default function Footer() {
                       aria-label={social.name}
                       className="flex h-9 w-9 items-center justify-center rounded-lg border border-border bg-background text-text-muted transition-all duration-200 hover:border-primary/30 hover:text-primary hover:shadow-md hover:shadow-primary/10"
                     >
-                      {Icon && <Icon className="h-4 w-4" />}
+                      {IconComp ? <IconComp className="h-4 w-4" /> : null}
                     </a>
                   );
                 })}

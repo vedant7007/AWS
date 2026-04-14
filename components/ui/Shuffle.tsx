@@ -384,7 +384,8 @@ export default function Shuffle({
     }
   );
 
-  const Tag = tag as React.ElementType;
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  const Tag = tag as any;
 
   return (
     <Tag

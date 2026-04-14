@@ -18,6 +18,7 @@ interface ProfileCardProps {
   iconUrl?: string;
   behindGlowEnabled?: boolean;
   innerGradient?: string;
+  className?: string;
 }
 
 export default function ProfileCard({
@@ -35,6 +36,7 @@ export default function ProfileCard({
   iconUrl,
   behindGlowEnabled = true,
   innerGradient = "linear-gradient(145deg,#60496e8c 0%,#71C4FF44 100%)",
+  className = "",
 }: ProfileCardProps) {
   const cardRef = useRef<HTMLDivElement>(null);
   const [isActive, setIsActive] = useState(false);
@@ -106,7 +108,7 @@ export default function ProfileCard({
 
   return (
     <div
-      className={`pc-card-wrapper ${isActive ? "active" : ""}`}
+      className={`pc-card-wrapper ${isActive ? "active" : ""} ${className}`.trim()}
       onPointerMove={onPointerMove}
       onPointerEnter={onPointerEnter}
       onPointerLeave={onPointerLeave}

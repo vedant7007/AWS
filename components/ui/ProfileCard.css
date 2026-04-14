@@ -15,12 +15,12 @@
   --behind-glow-color: rgba(125, 190, 255, 0.67);
   --behind-glow-size: 25%;
   --inner-gradient: none;
-  --sunpillar-1: hsl(2, 40%, 73%);
-  --sunpillar-2: hsl(53, 40%, 69%);
-  --sunpillar-3: hsl(93, 40%, 69%);
-  --sunpillar-4: hsl(176, 40%, 76%);
-  --sunpillar-5: hsl(228, 40%, 74%);
-  --sunpillar-6: hsl(283, 40%, 73%);
+  --sunpillar-1: hsl(2, 100%, 73%);
+  --sunpillar-2: hsl(53, 100%, 69%);
+  --sunpillar-3: hsl(93, 100%, 69%);
+  --sunpillar-4: hsl(176, 100%, 76%);
+  --sunpillar-5: hsl(228, 100%, 74%);
+  --sunpillar-6: hsl(283, 100%, 73%);
   --sunpillar-clr-1: var(--sunpillar-1);
   --sunpillar-clr-2: var(--sunpillar-2);
   --sunpillar-clr-3: var(--sunpillar-3);
@@ -112,10 +112,10 @@
   mask-size: 150%;
   mask-position: top calc(200% - (var(--background-y) * 5)) left calc(100% - var(--background-x));
   transition: filter 0.8s ease;
-  filter: brightness(0.4) contrast(1.1) saturate(0.2) opacity(0.25);
+  filter: brightness(0.66) contrast(1.33) saturate(0.33) opacity(0.5);
   animation: holo-bg 18s linear infinite;
   animation-play-state: running;
-  mix-blend-mode: overlay;
+  mix-blend-mode: color-dodge;
 }
 
 .pc-shine,
@@ -178,7 +178,7 @@
 
 .pc-card:hover .pc-shine,
 .pc-card.active .pc-shine {
-  filter: brightness(0.5) contrast(1.2) saturate(0.3);
+  filter: brightness(0.8) contrast(1.5) saturate(0.5);
   animation-play-state: paused;
 }
 
@@ -186,7 +186,7 @@
 .pc-card.active .pc-shine::before,
 .pc-card:hover .pc-shine::after,
 .pc-card.active .pc-shine::after {
-  opacity: 0.4;
+  opacity: 0.6;
 }
 
 .pc-shine::before {
@@ -421,6 +421,92 @@
       90% 90%,
       center;
   }
+}
+
+/* ---- Size variants ---- */
+
+/* Lead card variant — used in 3+2 grid */
+.pc-card-wrapper--lead .pc-card {
+  height: 55svh;
+  max-height: 460px;
+}
+
+.pc-card-wrapper--lead .pc-details {
+  top: 2em;
+}
+
+.pc-card-wrapper--lead .pc-details h3 {
+  font-size: min(4.5svh, 2.5em);
+}
+
+.pc-card-wrapper--lead .pc-details p {
+  font-size: 14px;
+  top: -10px;
+}
+
+.pc-card-wrapper--lead .pc-user-info {
+  --ui-inset: 16px;
+  padding: 10px 12px;
+}
+
+.pc-card-wrapper--lead .pc-mini-avatar {
+  width: 36px;
+  height: 36px;
+}
+
+.pc-card-wrapper--lead .pc-handle {
+  font-size: 13px;
+}
+
+.pc-card-wrapper--lead .pc-status {
+  font-size: 11px;
+}
+
+.pc-card-wrapper--lead .pc-contact-btn {
+  padding: 8px 14px;
+  font-size: 11px;
+}
+
+/* Member card variant — smaller cards for team members */
+.pc-card-wrapper--member .pc-card {
+  height: 45svh;
+  max-height: 380px;
+}
+
+.pc-card-wrapper--member .pc-details {
+  top: 1.5em;
+}
+
+.pc-card-wrapper--member .pc-details h3 {
+  font-size: min(3.5svh, 2em);
+}
+
+.pc-card-wrapper--member .pc-details p {
+  font-size: 12px;
+  top: -8px;
+}
+
+.pc-card-wrapper--member .pc-user-info {
+  --ui-inset: 12px;
+  padding: 8px 10px;
+}
+
+.pc-card-wrapper--member .pc-mini-avatar {
+  width: 28px;
+  height: 28px;
+}
+
+.pc-card-wrapper--member .pc-handle {
+  font-size: 12px;
+}
+
+.pc-card-wrapper--member .pc-status {
+  font-size: 10px;
+}
+
+.pc-card-wrapper--member .pc-contact-btn {
+  padding: 6px 12px;
+  font-size: 10px;
 }
 
 @media (max-width: 768px) {

@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <!-- Calendar icons -->
+  <g transform="translate(15,15)" opacity="0.9">
+    <rect x="0" y="8" width="40" height="36" rx="4" fill="none" stroke="white" stroke-width="2.5"/>
+    <line x1="10" y1="0" x2="10" y2="14" stroke="white" stroke-width="2.5" stroke-linecap="round"/>
+    <line x1="30" y1="0" x2="30" y2="14" stroke="white" stroke-width="2.5" stroke-linecap="round"/>
+    <line x1="0" y1="20" x2="40" y2="20" stroke="white" stroke-width="2"/>
+    <circle cx="12" cy="30" r="2.5" fill="white"/>
+    <circle cx="20" cy="30" r="2.5" fill="white"/>
+    <circle cx="28" cy="30" r="2.5" fill="white"/>
+  </g>
+  <!-- Ticket -->
+  <g transform="translate(110,20)" opacity="0.7">
+    <rect x="0" y="0" width="50" height="28" rx="4" fill="none" stroke="white" stroke-width="2"/>
+    <line x1="18" y1="0" x2="18" y2="28" stroke="white" stroke-width="1.5" stroke-dasharray="3,3"/>
+    <circle cx="35" cy="14" r="4" fill="white" opacity="0.5"/>
+  </g>
+  <!-- Star -->
+  <g transform="translate(30,90)" opacity="0.75">
+    <polygon points="20,0 25,14 40,14 28,22 32,36 20,28 8,36 12,22 0,14 15,14" fill="white"/>
+  </g>
+  <!-- Small calendar -->
+  <g transform="translate(120,100)" opacity="0.6">
+    <rect x="0" y="6" width="30" height="26" rx="3" fill="none" stroke="white" stroke-width="2"/>
+    <line x1="8" y1="0" x2="8" y2="10" stroke="white" stroke-width="2" stroke-linecap="round"/>
+    <line x1="22" y1="0" x2="22" y2="10" stroke="white" stroke-width="2" stroke-linecap="round"/>
+    <line x1="0" y1="15" x2="30" y2="15" stroke="white" stroke-width="1.5"/>
+  </g>
+  <!-- Clock -->
+  <g transform="translate(60,150)" opacity="0.65">
+    <circle cx="18" cy="18" r="16" fill="none" stroke="white" stroke-width="2"/>
+    <line x1="18" y1="18" x2="18" y2="8" stroke="white" stroke-width="2" stroke-linecap="round"/>
+    <line x1="18" y1="18" x2="26" y2="18" stroke="white" stroke-width="2" stroke-linecap="round"/>
+  </g>
+  <g transform="translate(140,155)" opacity="0.5">
+    <polygon points="12,0 15,8 24,8 17,13 19,22 12,17 5,22 7,13 0,8 9,8" fill="white"/>
+  </g>
+</svg>

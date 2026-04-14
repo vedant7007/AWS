@@ -332,6 +332,35 @@ export const eventCategories = [
   "Community Day",
 ] as const;
 
+// Faculty Mentors
+export interface FacultyMentor {
+  name: string;
+  designation: string;
+  department: string;
+  initials: string;
+}
+
+export const facultyMentors: FacultyMentor[] = [
+  {
+    name: "A Srujana",
+    designation: "Principal",
+    department: "VJIT",
+    initials: "AS",
+  },
+  {
+    name: "Dr. Aruna Kumari",
+    designation: "Head of Department",
+    department: "CSE",
+    initials: "AK",
+  },
+  {
+    name: "Rajesh Kanan",
+    designation: "Faculty Advisor",
+    department: "AWS Cloud Club",
+    initials: "RK",
+  },
+];
+
 // Team Data — Real members
 export interface TeamSubMember {
   name: string;
@@ -346,6 +375,7 @@ export interface TeamLead {
   tagline: string;
   socials: { linkedin?: string; github?: string; twitter?: string };
   color: string;
+  iconUrl: string;
   teamMembers: TeamSubMember[];
 }
 
@@ -383,7 +413,13 @@ export const teamData: TeamData = {
       tagline: "Building the infrastructure and leading all technical initiatives",
       socials: { linkedin: "#", github: "#", twitter: "#" },
       color: "#4DA6FF",
-      teamMembers: [],
+      iconUrl: "/icons/team-tech.svg",
+      teamMembers: [
+        { name: "Aarav Sharma", subRole: "Backend Developer" },
+        { name: "Nisha Patel", subRole: "Frontend Developer" },
+        { name: "Rohan Gupta", subRole: "Cloud Architect" },
+        { name: "Priya Reddy", subRole: "DevOps Engineer" },
+      ],
     },
     {
       id: "events",
@@ -392,7 +428,12 @@ export const teamData: TeamData = {
       tagline: "Orchestrating workshops, hackathons, and community events",
       socials: { linkedin: "#", github: "#" },
       color: "#2DD4BF",
-      teamMembers: [],
+      iconUrl: "/icons/team-events.svg",
+      teamMembers: [
+        { name: "Kavya Iyer", subRole: "Event Coordinator" },
+        { name: "Arjun Menon", subRole: "Logistics Manager" },
+        { name: "Tanvi Kulkarni", subRole: "Speaker Relations" },
+      ],
     },
     {
       id: "production",
@@ -401,7 +442,13 @@ export const teamData: TeamData = {
       tagline: "Managing content production, video, and event documentation",
       socials: { linkedin: "#", github: "#" },
       color: "#A78BFA",
-      teamMembers: [],
+      iconUrl: "/icons/team-production.svg",
+      teamMembers: [
+        { name: "Vikram Singh", subRole: "Video Editor" },
+        { name: "Aisha Khan", subRole: "Photographer" },
+        { name: "Rahul Nair", subRole: "Motion Graphics" },
+        { name: "Sneha Joshi", subRole: "Content Writer" },
+      ],
     },
     {
       id: "design",
@@ -410,7 +457,12 @@ export const teamData: TeamData = {
       tagline: "Crafting the visual identity and creative direction of the club",
       socials: { linkedin: "#", github: "#" },
       color: "#F472B6",
-      teamMembers: [],
+      iconUrl: "/icons/team-design.svg",
+      teamMembers: [
+        { name: "Meera Krishnan", subRole: "UI Designer" },
+        { name: "Aditya Verma", subRole: "Graphic Designer" },
+        { name: "Pooja Hegde", subRole: "Brand Designer" },
+      ],
     },
     {
       id: "marketing",
@@ -419,7 +471,13 @@ export const teamData: TeamData = {
       tagline: "Driving outreach, social media presence, and club visibility",
       socials: { linkedin: "#", github: "#" },
       color: "#FBBF24",
-      teamMembers: [],
+      iconUrl: "/icons/team-marketing.svg",
+      teamMembers: [
+        { name: "Kiran Rao", subRole: "Social Media Manager" },
+        { name: "Divya Sharma", subRole: "Content Strategist" },
+        { name: "Ankit Desai", subRole: "Outreach Coordinator" },
+        { name: "Riya Kapoor", subRole: "Analytics Lead" },
+      ],
     },
   ],
   recruitment: {
