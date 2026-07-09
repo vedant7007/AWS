@@ -27,6 +27,7 @@ interface DomeGalleryProps {
   imageBorderRadius?: string;
   openedImageBorderRadius?: string;
   grayscale?: boolean;
+  autoRotationSpeed?: number;
 }
 
 const DEFAULTS = {
@@ -137,6 +138,7 @@ export default function DomeGallery({
   imageBorderRadius = "30px",
   openedImageBorderRadius = "30px",
   grayscale = true,
+  autoRotationSpeed = 0,
 }: DomeGalleryProps) {
   const rootRef = useRef<HTMLDivElement>(null);
   const mainRef = useRef<HTMLDivElement>(null);
@@ -280,6 +282,22 @@ export default function DomeGallery({
   useEffect(() => {
     applyTransform(rotationRef.current.x, rotationRef.current.y);
   }, []);
+
+  // Auto-rotation loop
+  useEffect(() => {
+    if (autoRotationSpeed === 0) return;
+    let raf: number;
+    const loop = () => {
+      if (!draggingRef.current && !openingRef.current && !inertiaRAF.current) {
+        const nextY = wrapAngleSigned(rotationRef.current.y + autoRotationSpeed);
+        rotationRef.current.y = nextY;
+        applyTransform(rotationRef.current.x, nextY);
+      }
+      raf = requestAnimationFrame(loop);
+    };
+    raf = requestAnimationFrame(loop);
+    return () => cancelAnimationFrame(raf);
+  }, [autoRotationSpeed]);
 
   const stopInertia = useCallback(() => {
     if (inertiaRAF.current) {

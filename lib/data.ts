@@ -7,6 +7,7 @@ export const navLinks = [
   { label: "Home", href: "/" },
   { label: "Events", href: "/events" },
   { label: "Team", href: "/team" },
+  { label: "Members", href: "/members" },
   { label: "Gallery", href: "/gallery" },
   { label: "Contact", href: "/contact" },
   { label: "Feedback", href: "/feedback" },
@@ -674,6 +675,7 @@ export const footerLinks = {
     { label: "Home", href: "/" },
     { label: "Events", href: "/events" },
     { label: "Team", href: "/team" },
+    { label: "Members", href: "/members" },
     { label: "Gallery", href: "/gallery" },
     { label: "Join", href: "#join" },
   ],
@@ -720,3 +722,104 @@ export const feedbackCategories = [
   "Resources",
   "Team",
 ];
+
+// Mock Members Database for Directory
+export interface Member {
+  id: string;
+  name: string;
+  role: string;
+  year: string;
+  branch: string;
+  certifications: string[];
+  skills: string[];
+  bio: string;
+  photoUrl: string;
+  social: {
+    linkedin?: string;
+    github?: string;
+    twitter?: string;
+  };
+  isActive: boolean;
+}
+
+export const mockMembers: Member[] = [
+  {
+    id: "mem-1",
+    name: "Devidi Ruthvik Reddy",
+    role: "Club Captain",
+    year: "3rd Year",
+    branch: "CSE",
+    certifications: ["AWS Certified Cloud Practitioner"],
+    skills: ["AWS", "Cloud Architecture", "Leadership", "Public Speaking"],
+    bio: "Leading the AWS Cloud Club VJIT's mission to build the next generation of cloud professionals.",
+    photoUrl: "",
+    social: { linkedin: "#", github: "#", twitter: "#" },
+    isActive: true
+  },
+  {
+    id: "mem-2",
+    name: "Vedant M Idlgave",
+    role: "Tech Lead",
+    year: "3rd Year",
+    branch: "CSE",
+    certifications: ["AWS Certified Solutions Architect - Associate", "AWS Certified Developer - Associate"],
+    skills: ["Next.js", "TypeScript", "AWS CDK", "Serverless", "Terraform"],
+    bio: "Building the infrastructure and leading all technical initiatives. Cloud builder and open-source enthusiast.",
+    photoUrl: "",
+    social: { linkedin: "#", github: "#", twitter: "#" },
+    isActive: true
+  },
+  {
+    id: "mem-3",
+    name: "Sai Srujan",
+    role: "Events Lead",
+    year: "3rd Year",
+    branch: "IT",
+    certifications: ["AWS Certified Cloud Practitioner"],
+    skills: ["Event Operations", "AWS", "Logistics", "Community Outreach"],
+    bio: "Orchestrating workshops, hackathons, and community events to spread cloud knowledge.",
+    photoUrl: "",
+    social: { linkedin: "#", github: "#" },
+    isActive: true
+  },
+  {
+    id: "mem-4",
+    name: "Jithendra",
+    role: "Production Lead",
+    year: "3rd Year",
+    branch: "CSE",
+    certifications: [],
+    skills: ["Video Production", "Content Strategy", "Digital Media", "AWS Educate"],
+    bio: "Managing content production, videography, and event documentation for AWS Cloud Club.",
+    photoUrl: "",
+    social: { linkedin: "#", github: "#" },
+    isActive: true
+  },
+  {
+    id: "mem-5",
+    name: "Sai Medha",
+    role: "Design Lead",
+    year: "3rd Year",
+    branch: "CSE",
+    certifications: [],
+    skills: ["UI/UX", "Figma", "Branding", "Graphic Design"],
+    bio: "Crafting the visual identity, website designs, and creative direction of the club.",
+    photoUrl: "",
+    social: { linkedin: "#", github: "#" },
+    isActive: true
+  },
+  {
+    id: "mem-6",
+    name: "Sameera K",
+    role: "Marketing Lead",
+    year: "3rd Year",
+    branch: "AI&DS",
+    certifications: ["AWS Certified Cloud Practitioner"],
+    skills: ["Data Analytics", "AWS S3", "Athena", "SQL", "Marketing", "Social Media"],
+    bio: "Passionate about marketing, data analysis, and AI deployments. Leading marketing initiatives for the club.",
+    photoUrl: "",
+    social: { linkedin: "#", github: "#" },
+    isActive: true
+  }
+];
+

@@ -558,3 +558,108 @@ body::before {
     scroll-behavior: auto !important;
   }
 }
+
+/* ═══════ PAIR 4 — GALLERY + RESOURCES ═══════ */
+
+/* Dome gallery scroll lock */
+.dg-scroll-lock {
+  overflow: hidden;
+}
+
+/* Hide scrollbar for filter pill rows */
+.hide-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Article / MDX content styles */
+.article-content {
+  color: #d1d5db;
+  font-size: 1.05rem;
+  line-height: 1.8;
+}
+.article-content h2 {
+  font-size: 1.875rem;
+  font-weight: 700;
+  color: #f9fafb;
+  margin-top: 3rem;
+  margin-bottom: 1.25rem;
+  letter-spacing: 0.03em;
+}
+.article-content h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #f3f4f6;
+  margin-top: 2rem;
+  margin-bottom: 0.75rem;
+}
+.article-content p {
+  margin-bottom: 1.25rem;
+}
+.article-content a {
+  color: #FF9900;
+  text-decoration: none;
+}
+.article-content a:hover {
+  text-decoration: underline;
+}
+.article-content ul, .article-content ol {
+  padding-left: 1.5rem;
+  margin-bottom: 1.25rem;
+}
+.article-content li {
+  margin-bottom: 0.4rem;
+}
+.article-content code:not(pre code) {
+  background: rgba(255,255,255,0.08);
+  color: #fde68a;
+  padding: 0.1rem 0.4rem;
+  border-radius: 4px;
+  font-size: 0.9em;
+}
+.article-content pre {
+  background: #0a0e17;
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 12px;
+  overflow-x: auto;
+  margin-bottom: 1.5rem;
+}
+.article-content pre code {
+  display: block;
+  padding: 1.25rem;
+  font-size: 0.875rem;
+}
+.article-content blockquote {
+  border-left: 3px solid #FF9900;
+  background: rgba(255,255,255,0.04);
+  padding: 0.75rem 1.25rem;
+  border-radius: 0 8px 8px 0;
+  margin-bottom: 1.25rem;
+  color: #9ca3af;
+}
+.article-content table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 1.5rem;
+  font-size: 0.9rem;
+}
+.article-content th {
+  background: rgba(255,255,255,0.06);
+  padding: 0.6rem 1rem;
+  text-align: left;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+  color: #f9fafb;
+}
+.article-content td {
+  padding: 0.6rem 1rem;
+  border-bottom: 1px solid rgba(255,255,255,0.06);
+}
+.article-content img {
+  border-radius: 12px;
+  border: 1px solid rgba(255,255,255,0.1);
+  max-width: 100%;
+  margin: 1rem 0;
+}
