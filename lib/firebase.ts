@@ -54,4 +54,27 @@ export async function getTeamMembers() {
   }
 }
 
+import { mockMembers, Member } from "./data";
+
+export async function getMembers(): Promise<Member[]> {
+  try {
+    const q = query(
+      collection(db, "members"),
+      where("isActive", "==", true)
+    );
+    const querySnapshot = await getDocs(q);
+    if (querySnapshot.empty) {
+      return mockMembers;
+    }
+    return querySnapshot.docs.map((doc) => ({
+      id: doc.id,
+      ...doc.data(),
+    })) as Member[];
+  } catch (error) {
+    console.error("Error fetching members:", error);
+    return mockMembers;
+  }
+}
+
 export { app, db, auth, storage };
+
